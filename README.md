@@ -12,19 +12,19 @@ The order of building this project is :
 
 You need to enter the folders in the previous order and follow the instructions for that application
 
-Trouble shoot
+#Trouble shoot
 
-Problem:
+### Problem:
 Containers are not able to see each other
-Solution: 
+### Solution: 
 Restart your docker local service
 
 
-Problem:
+### Problem:
 internalvalidator externalcriminalrecordsvalidator nationalregistryvalidator validatortesterservice
 Don't connect to eureka server
 
-Solution
+### Solution
 internalvalidator externalcriminalrecordsvalidator nationalregistryvalidator validatortesterservice
 have their eureka server configuration path in src/main/resources/application.properties
 
