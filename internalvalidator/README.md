@@ -1,4 +1,4 @@
-# Internal Validaor Service
+# Internal Validator Service
 
 To run internalValidator service do the following
 
