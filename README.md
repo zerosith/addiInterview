@@ -21,7 +21,7 @@ Restart your docker local service
 
 
 ### Problem:
-internalvalidator externalcriminalrecordsvalidator nationalregistryvalidator validatortesterservice
+`internalvalidator` `externalcriminalrecordsvalidator` `nationalregistryvalidator` `validatortesterservice`
 Don't connect to eureka server
 
 ### Solution
