@@ -25,7 +25,7 @@ Restart your docker local service
 Don't connect to eureka server
 
 ### Solution
-internalvalidator externalcriminalrecordsvalidator nationalregistryvalidator validatortesterservice
+`internalvalidator` `externalcriminalrecordsvalidator` `nationalregistryvalidator` `validatortesterservice`
 have their eureka server configuration path in src/main/resources/application.properties
 
 You need to change the value of the property `eureka.client.service-url.defaultZone` to the url of the eureka server.
