@@ -12,6 +12,18 @@ The order of building this project is :
 
 You need to enter the folders in the previous order and follow the instructions for that application
 
+
+## Pre requisites
+- Maven 3.8.3
+- JDK 17.0.1
+- Docker
+- Postman
+
+
+## Postamn support
+Import the file `addiInterview.postman_collection.json` to postman to have the calls to test this code challende
+
+
 ## Troubleshoot:
 
 ### Problem:
