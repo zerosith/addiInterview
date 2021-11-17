@@ -12,7 +12,7 @@ The order of building this project is :
 
 You need to enter the folders in the previous order and follow the instructions for that application
 
-#Trouble shoot
+## Troubleshoot:
 
 ### Problem:
 Containers are not able to see each other
