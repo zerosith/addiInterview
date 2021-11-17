@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "f37671a8-a632-41ee-ac49-fe486e5384bf",
+		"name": "addiInterview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "internalValidator",
+			"item": [
+				{
+					"name": "validateInternalLead",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/internalvalidator/validateLead",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"internalvalidator",
+								"validateLead"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcceptedUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/internalvalidator/authorizedLeads",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"internalvalidator",
+								"authorizedLeads"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "nationalValidator",
+			"item": [
+				{
+					"name": "validateRegistry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8082/thirdparty/nationalvalidator/validateRegistry",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"thirdparty",
+								"nationalvalidator",
+								"validateRegistry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/actuator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "criminalValidator",
+			"item": [
+				{
+					"name": "validateRegistry",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8084/thirdparty/criminalvalidator/validateRegistry",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"thirdparty",
+								"criminalvalidator",
+								"validateRegistry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testerValidator",
+			"item": [
+				{
+					"name": "testerValidateLead",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8083/tester/sendLeads",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"sendLeads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcceptedLeads",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8083/tester/getAcceptedLeads",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"getAcceptedLeads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nationalServiceValidate",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8083/tester/nationalServiceValidate",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"nationalServiceValidate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "criminalServiceValidate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8083/tester/criminalServiceValidate",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"criminalServiceValidate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "completeUseCase",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":1013536531,\r\n   \"firstName\":\"Andres\",\r\n   \"lastName\":\"cardenas\",\r\n   \"email\":\"cadenas.andres@email.com\",\r\n   \"isAccepted\":false\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8083/tester/completeUseCase",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"completeUseCase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "repeatableCompleteUseCase",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8083/tester/repeatableCompleteUseCase",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tester",
+								"repeatableCompleteUseCase"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
