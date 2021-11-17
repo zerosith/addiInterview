@@ -46,7 +46,7 @@ You can get this url when you open the eureka server:
 
 ![screenshot](/screenshot/screenshot.png)
 
-Then change the value of the property to that url in all services (i.e. internalvalidator externalcriminalrecordsvalidator nationalregistryvalidator validatortesterservice)
+Then change the value of the property to that url in all services (i.e. `internalvalidator` `externalcriminalrecordsvalidator` `nationalregistryvalidator` `validatortesterservice`)
 
 
 
